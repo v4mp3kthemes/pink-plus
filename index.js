@@ -1,1 +1,1 @@
-// ===== CHAT COMMAND =====     if (!interaction.isChatInputCommand()) return;      const command = client.commands.get(interaction.commandName);     if (!command) return;      try {         await command.execute(interaction);     } catch (err) {         console.error(err);         if (interaction.replied || interaction.deferred) {             await interaction.followUp({ content: '❌ Błąd komendy', ephemeral: true });         } else {             await interaction.reply({ content: '❌ Błąd komendy', ephemeral: true });         }     } });
+hello
